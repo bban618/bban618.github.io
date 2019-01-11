@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃2-메인 페이지</title>
+</head>
+<body>
+<!--    header.hd>div.wrap>(a.logo>img)+(nav#gnb>ul.main>li*4>a)-->
+   
+   .lst.bgIcon { padding-top: 50px; }
+   .lst.bgIcon li { margin-bottom:50px; }
+   .lst.bgIcon a { display:block; width:150px; height: 182px; margin:0 auto; text-align:center; background-repeat:no-repeat; background-position:center top; background-size:150px; }
+   .lst1.bgIcon a. com1 { padding-top: 150px; }
+   .lst1.bgIcon . item1 { background-image:url("./ico/icon1.png"); }
+   .lst1.bgIcon . item1 { background-image:url("./ico/icon2.png"); }
+   .lst1.bgIcon . item1 { background-image:url("./ico/icon3.png"); }
+   .lst1.bgIcon . item1 { background-image:url("./ico/icon4.png"); }
+   .lst1.bgIcon . item1:hover { background-image:url("./ico/icon1_over.png"); }
+   .lst1.bgIcon . item1:hover { background-image:url("./ico/icon2_over.png"); }
+   .lst1.bgIcon . item1:hover { background-image:url("./ico/icon3_over.png"); }
+   .lst1.bgIcon . item1:hover { background-image:url("./ico/icon4_over.png"); }
+   
+   .ft{ width:100%; height:130pz; clear:both; background:#333; }
+   #fnb { background:#3f3f3f; height:130px; }
+    <header class="hd">
+           <div class="wrap">
+            <a href="" class="logo">
+            <img src="./img/logo.png" alt="앰블럼"></a>
+            <nav id="gnb">
+                <ul class="main">
+                    <li><a href="intro.html">회사소개</a></li>
+                    <li><a href="product.html">제품소개</a></li>
+                    <li><a href="service.html">서비스</a></li>
+                    <li><a href="community.html">고객센터</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+<!--    main.content>section.page#page1*4>div.wrap>h2.pageTittle-->
+    <main class="content">
+        <section class="page" id="page1">
+           <figure>
+               <img src="./img/vs1.jpg" alt="비주얼배너">
+           </figure>
+            <div class="wrap">
+                <h2 class="pageTittle">사업분야</h2>
+                <ul class="lst1">
+                    <li class="col4"><a href="">
+                            <img src="./ico/icon1.png" alt="경영/회계">
+                            <p class="com1">경영/회계</p>
+                        </a></li>
+                    <li class="col4"><a href="">
+                            <img src="./ico/ion2.png" alt="">
+                            <p class="com1"></p>
+                        </a></li>
+                    <li class="col4"><a href="">
+                            <img src="./ico/icon3" alt="">
+                            <p class="com1">교육연구</p>
+                        </a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="page" id="page2">
+            <div class="wrap">
+                <h2 class="pageTittle">알려드립니다</h2>
+                <ul class="lst1 bgIcon"></ul>
+                <li class="col4"></li>
+                <a href="" class="item1"></a>
+                
+                <p class="com1">경영/회계</p>
+            </div>
+        </section>
+        <section class="page" id="page3">
+            <div class="wrap">
+                <h2 class="pageTittle">이벤트</h2>
+            </div>
+        </section>
+        <section class="page" id="page4">
+            <div class="wrap">
+                <h2 class="pageTittle">오시는 분에게</h2>
+            </div>
+        </section>
+    </main>
+    
+<!--    footer.ft>(nav#fnb>ul.wrap>li*4>a)+(div.cp>adress.addr+p.copyright)-->
+    <footer class="ft">
+        <nav id="fnb">
+            <ul class="wrap">
+                <li><a href="">privacy</a></li>
+                <li><a href="">membership</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">sitemap</a></li>
+            </ul>
+        </nav>
+        <div class="cp">
+            <adress class="addr">대전광역시 서구 둔산동 1180 오라클빌딩 3F</adress>
+            <p class="copyright">All copyrights by kim @ 2019</p>
+        </div>
+    </footer>
+</body>
+</html>

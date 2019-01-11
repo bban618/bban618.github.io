@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 선택자1</title>
+    <style>
+        * { font-size:12pt; }
+        #data { color: yellow; }
+        .hit { text-decoration: overline; color: brown; }
+        p, span { text-decoration:  : underline; }
+        span#data { color: red; }
+        .hit#data { color: blue; }
+        span.hit#data {color: navy; }
+        p > span { }
+        p > .hit { }
+        p > #data {}
+        p > span.hit{}
+        p > span#data{}
+        p > .hit#data{}
+        p > span.hit#data{}
+        p *{}
+        p sapn {}
+        p .hit{}
+        p #data{}
+        p span.hit{}
+        p span.hit#data{}
+        p #data.hit{}
+      
+    </style>
+</head>
+<body>
+    <p class="paragragh">
+       당신은 공부를 하고 계십니꺄?
+       <span class="hit" id="data">밥</span>은 먹고 다닙니까???
+    </p>
+</body>
+</html>
