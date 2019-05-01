@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>KFC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href=""><!-- 웹 폰트 파일 로딩 -->
+    <link rel="stylesheet" href="reset.css"><!-- 초기화 파일 로딩 -->
+    <link rel="stylesheet" href=""><!-- jQuery Mobile을 사용시 css 로딩 -->
+    <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src=""></script><!-- jQuery Mobile을 사용시 js 로딩 -->
+    
+    <script></script>
+    
+    <style>
+    * { margin: 0; padding: 0; font-family: 'Jua', sans-serif; }    
+    body, html { width: 100%; height: 100%;  }
+    ul { list-style: none; }    
+    a { text-decoration: none; }     
+    </style>
+
+    <style>
+    .container { width: 100%; height: 100%; }    
+    .hd { width:100%; height:60px; position:relative; clear:both; border-bottom:1px solid #333; }
+    .hd label { display:block; width: 40px; height:40px; line-height: 40px; 
+        position:absolute; top:10px; z-index:90; }  
+    .logoFrame { text-align:center; padding-top:10px; background-color:#fff;  }    
+    .gnbCall { left:10px; }
+    .tnbCall { right:10px; background-image: url(image/lstBtn.png); background-repeat: no-repeat; text-indent: -9999px; }    
+    .ck { display:none; }
+    #gnb { position:fixed; top:60px; left:-100%; width:100%; height:calc(100% - 60px); z-index:99; transition:0.6s; background:rgba(0,0,0,0.8); }    
+    #tnb { position:fixed; top:60px; right:-100%; width: 100%; height:calc(100% - 60px); z-index:99; transition:0.6s;  background:rgba(0,0,0,0.8);  }  
+    nav ul { border-bottom:1px solid #999; }     
+    nav ul li { line-height:4; border-top:1px solid #999; border-bottom:1px solid #000; }    
+    nav ul li a { color:#fff; font-size:0.9em; display:block; padding-left:20%; }
+    .closeBtn { display:block; width: 40px; height: 40px; line-height:40px; 
+        font-size:2em; text-align:center; color:#fff; position:absolute; right:30px; top:10px; }
+    #ck1:checked ~ #gnb { left: 0; }
+    #ck1:checked ~ #tnb { right:-100%; }    
+    #ck2:checked ~ #gnb { left:-100%; }    
+    #ck2:checked ~ #tnb { right:0; } 
+    .vs { width: 100%; text-align:center; padding-top: 10px; }    
+    .sec1 { padding-top:1em; }     
+    .pageTitle { font-size:2em; line-height: 2; text-align:center; background:#eee; }
+    .pageComment { font-size:0.9em; padding:20px; text-align: center; font-style: italic; font-weight: 600; }    
+    #ft { clear: both; width: 100%; height:140px; color:#fff; background:#333; 
+        text-align:center; font-size:0.85em; }
+    .copyright { padding-top: 25px; }    
+    .addr { padding-top: 6px; }   
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <input type="checkbox" id="ck1" class="ck">
+    <input type="checkbox" id="ck2" class="ck">
+    <header class="hd">
+        <h1 class="logoFrame">
+            <a href="mobile.html" class="logo">
+                <img src="./image/logo2_kfc.png" alt="logo">
+            </a>
+        </h1>
+        <label for="ck2" class="tnbCall">상단</label>
+    </header>
+    
+    <nav id="tnb">
+        <ul> 
+            <li><a href="sub.html">KFC IS</a></li>
+            <li><a href="sub.html">MENU</a></li>
+            <li><a href="sub.html">EVENT</a></li>
+            <li><a href="sub.html">KFC SERVICE</a></li>
+        </ul>
+        <label for="ck2" class="closeBtn">X</label>
+    </nav>
+    <div id="content">
+        <figure class="vs">
+            <img src="./image/bban1.png" alt="메인배너1">
+        </figure>
+        <section class="sec1">
+            <div class="conFrame">
+                <h2 class="pageTitle">ENJOY EVENT</h2>    
+                <p class="pageComment">정직한 음식이 만드는 행복한 세상!<br>
+                맛있는 kfc를 즐기는 방법!</p>
+            </div>        
+        </section>
+        <figure class="vs">
+            <img src="./image/towrbrg.png" alt="메인배너2">
+        </figure>
+        <section class="sec1">
+            <div class="conFrame">
+                <h2 class="pageTitle">오리지널 타워버거의 귀환!</h2>    
+                <p class="pageComment">새롭게 리뉴얼 된 타워버거를
+                만나보세요!</p>
+            </div>        
+        </section> 
+    </div>
+    <footer id="ft">
+        <p class="copyright"></p>
+        <add class="addr">서울특별시 종로구 창경궁로120(인의동,종로플레이스8층)</address>
+        <call class="tel">대표자 : 엄익수 / TEL : 02-6020-8368</call>
+    </footer>
+</div>
+</body>
+</html>
